@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ASP.NET_Calender
 {
-    public partial class Employee : System.Web.UI.Page
+    public partial class PatientMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Calendar1.Visible = false;
-        }
 
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-            Calendar1.Visible = true;
         }
     }
 }
