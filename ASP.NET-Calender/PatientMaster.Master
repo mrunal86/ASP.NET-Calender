@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div id="container">
-        <div id="header"> Heade content</div>
+        <div id="header"> Head content</div>
         <div>
             <div id="content">
                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

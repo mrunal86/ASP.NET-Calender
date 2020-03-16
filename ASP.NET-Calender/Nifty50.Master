@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nifty50.master.cs" Inherits="ASP.NET_Calender.Nifty50" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Table ID="Table1" runat="server" Caption="Nifty 50" Height="141px" Width="454px" BackColor="#FFCCFF" BorderColor="#FF9999" HorizontalAlign="Center">
+            <asp:TableRow runat="server">
+                 <asp:TableCell runat="server"> Upload File</asp:TableCell>
+                 <asp:TableCell runat="server">
+                     <asp:FileUpload ID="FileUpload1" runat="server" />
+                 </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow runat="server">
+                <asp:TableCell runat="server"></asp:TableCell>
+                <asp:TableCell runat="server">
+                    <asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Button1_Click" />
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow runat="server">
+                <asp:TableCell runat="server"></asp:TableCell>
+                <asp:TableCell runat="server">
+                     <asp:Label runat="server" ID="lblUploadstatus" Text=" "></asp:Label>
+                </asp:TableCell>
+               
+            </asp:TableRow>
+
+        </asp:Table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+        </asp:ContentPlaceHolder>
+    </div>
+        <div>
+            <asp:GridView ID="Nifty50GridView" runat="server"></asp:GridView>
+        </div>
+    </form>
+</body>
+</html>

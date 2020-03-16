@@ -70,11 +70,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CoalIndia.aspx" />
     <Content Include="Content\CSS\StyleMain.css" />
     <Content Include="Content\Images\calendar_icon.png" />
     <Content Include="packages.config" />
     <Content Include="PatientData.aspx" />
     <Content Include="PatientMaster.Master" />
+    <Content Include="Nifty50.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,6 +90,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoalIndia.aspx.cs">
+      <DependentUpon>CoalIndia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoalIndia.aspx.designer.cs">
+      <DependentUpon>CoalIndia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Employee.aspx.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,6 +106,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Nifty50.Master.cs">
+      <DependentUpon>Nifty50.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nifty50.Master.designer.cs">
+      <DependentUpon>Nifty50.Master</DependentUpon>
     </Compile>
     <Compile Include="PatientData.aspx.cs">
       <DependentUpon>PatientData.aspx</DependentUpon>
@@ -116,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ExcelFile\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
